@@ -8,7 +8,7 @@ dev/
 requeriments.txt
 ````
 
-A estrutura do [Dockerfile](Dockerfile). Ele copia a pasta dev para dentro do container, instala os  [requirements](requirements.txt) e executa os script [main](/dev/main.py) ao ser iniciado. Onde toda a logica fica dentro dele.
+A estrutura do [Dockerfile](Dockerfile). Ele copia a pasta dev para dentro do container, instala os  [requirements](requirements.txt) e executa os script [main](/docker/dev/main.py) ao ser iniciado. Onde toda a logica fica dentro dele.
 
 Para executar:
 
