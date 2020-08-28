@@ -15,6 +15,9 @@ Esta exemplo de dag, possui as imagens salvas na [ECR](https://aws.amazon.com/pt
 [DAG DOCKER](dag_docker_local.py)
 
 
+# Requisitos docker no airflow
+Para utilizar o docker dentro do airflow, se faz necessario instalar:
+
 ````python
 pip install docker
 ````
