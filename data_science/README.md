@@ -9,3 +9,7 @@ Aqui ficam organizados projetos de Ciencia de dados. Tentarei colocar alguns exe
 # Exemplos Praticos
 
 [PRATICOS](/data_science/casos)
+
+# Exemplos de deteccao de faces
+
+[IMAGENS](/data_science/face_detection)
