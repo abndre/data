@@ -15,6 +15,10 @@ Esta exemplo de dag, possui as imagens salvas na [ECR](https://aws.amazon.com/pt
 [DAG DOCKER](dag_docker_local.py)
 
 
+Este exemplo pode ser utilizado para criar um workflow dinamico para o airflow.
+
+[DAG DINÂMICA](dag_auto_workflow.py)
+
 # Requisitos docker no airflow
 Para utilizar o docker dentro do airflow, se faz necessario instalar:
 
