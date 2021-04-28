@@ -7,6 +7,7 @@ SELECT country_code, size,
        AS popsize_group
 INTO pop_plus
 FROM populations
+
 WHERE year = 2015;
 
 -- 5. Select fields
@@ -44,3 +45,66 @@ Select c.name as country, continent, l.name as language, official
   inner join languages as l
     -- 3. Match using code
     using (code);
+
+
+-- union
+
+-- Select fields from 2010 table
+Select *
+  -- From 2010 table
+  from economies2010
+	-- Set theory clause
+	union
+-- Select fields from 2015 table
+Select *
+  -- From 2015 table
+  from economies2015
+-- Order by code and year
+order by code, year;
+
+-- union all
+
+-- Select fields
+SELECT code, year
+  -- From economies
+  FROM economies
+	-- Set theory clause
+	union all
+-- Select fields
+SELECT country_code, year
+  -- From populations
+  FROM populations
+-- Order by code, year
+ORDER BY code, year;
+
+-- intersectional
+
+-- Select fields
+SELECT code, year
+  -- From economies
+  FROM economies
+	-- Set theory clause
+	intersect
+-- Select fields
+SELECT country_code, year
+  -- From populations
+  FROM populations
+-- Order by code, year
+ORDER BY code, year;
+
+-- except
+
+-- Select field
+SELECT name
+  -- From cities
+  FROM cities
+	-- Set theory clause
+	EXCEPT
+-- Select field
+SELECT capital
+  -- From countries
+  FROM countries
+-- Order by result
+ORDER BY name;
+
+-- SEMI-JOIN
