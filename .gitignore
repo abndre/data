@@ -3,4 +3,4 @@
 *.idea
 *.json
 *.ipynb_checkpoints
-*.ipynb
+#*.ipynb
